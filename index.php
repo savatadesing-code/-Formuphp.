@@ -7,20 +7,29 @@
 <body>
     <h2>Formulario de Productos</h2>
     <form action="procesar.php" method="post">
-        <label>Producto 1:</label>
-        <input type="text" name="producto1" required>
-        <label>Precio 1:</label>
-        <input type="number" step="0.01" name="precio1" required><br><br>
+        <div>
+            <label for="producto1">Producto 1:</label>
+            <input type="text" id="producto1" name="producto1" required>
 
-        <label>Producto 2:</label>
-        <input type="text" name="producto2" required>
-        <label>Precio 2:</label>
-        <input type="number" step="0.01" name="precio2" required><br><br>
+            <label for="precio1">Precio 1:</label>
+            <input type="number" id="precio1" name="precio1" step="0.01" required>
+        </div>
 
-        <label>Producto 3:</label>
-        <input type="text" name="producto3" required>
-        <label>Precio 3:</label>
-        <input type="number" step="0.01" name="precio3" required><br><br>
+        <div>
+            <label for="producto2">Producto 2:</label>
+            <input type="text" id="producto2" name="producto2" required>
+
+            <label for="precio2">Precio 2:</label>
+            <input type="number" id="precio2" name="precio2" step="0.01" required>
+        </div>
+
+        <div>
+            <label for="producto3">Producto 3:</label>
+            <input type="text" id="producto3" name="producto3" required>
+
+            <label for="precio3">Precio 3:</label>
+            <input type="number" id="precio3" name="precio3" step="0.01" required>
+        </div>
 
         <button type="submit">Enviar</button>
     </form>
